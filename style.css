@@ -1,0 +1,214 @@
+body{
+    margin: 0;
+    font-family: 'Mukta','montserrat',sans-serif;
+}
+html{
+    
+    
+    
+}
+.zone {
+    /*
+    padding:30px 50px;
+    margin:40px 60px;
+    */
+    cursor:pointer;
+    /*    display:inline-block;*/
+    color:#FFF;
+    font-size:2em;
+    border-radius:4px;
+    border:1px solid #bbb;
+    transition: all 0.3s linear;
+}
+
+.zone:hover {
+    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
+
+/*NAVIGATION*/
+.main_nav{
+    list-style: none;
+    display: flex;
+    font-size: 0.9em;
+    margin: 0;
+    margin-left: auto;
+}
+.nav_bar_top{
+    list-style: none;
+    display: flex;
+    font-size: 0.6em;
+    margin: 0;
+    height: 50px;
+    min-width: 500px;
+}
+.second{
+    display: flex;
+    /*    flex-wrap: wrap;*/
+
+}
+@media only screen and (max-width:800px){
+    .main_nav{
+        font-size: 0.5em;
+        padding: 0; 
+        min-width: 200px;
+    }
+    .nav_bar_top{
+        font-size: 0.4em;
+        min-width: 200px;
+    }
+    .container{
+        font-size: 0.9em;
+        padding: auto;
+    }
+
+}
+label.logo{
+    display: inline-block;
+    height: 3em;
+    width: 3em;
+    margin-left: 50px;
+}
+
+li{
+    padding: 20px;
+}
+a{
+    color: #f5f5f5;
+    text-decoration: none;   
+}
+a.country{
+    background: white;
+    color: black;
+    height:25px;
+    width: auto;
+}
+.push{
+    margin-left: auto;
+}
+
+
+/*COVER*/
+.container{
+    display: flex;
+
+    align-items: center;
+    justify-content: flex-start;
+    
+    height: 65vh;
+    background: url(img/sumo1.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+}
+.txt{
+    font-size: 1.5em;
+    padding: 100px;
+/*    text-align: center;*/
+    
+}
+/*GRID*/
+.grid-wrapper{
+    display:grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
+    
+}
+.box > img{
+    width: 100%;
+}
+.box{
+    background-color: #fefefe;
+    color: black;
+    text-align: center;
+    font-size: 1em;
+    padding: 10px;
+    margin:10px;
+}
+/*FOOTER*/
+.row{
+    display:flex;
+    flex-wrap: wrap;
+    
+}
+.row > div{
+    width: 25%;
+}
+.footer-col{
+    color: black;
+    text-align: left;
+    font-size: 0.5em;
+    padding: 20px;
+    margin:20px;
+    min-width: 150px;
+    
+}
+hr{
+    border-color: aqua;
+    width:50%;
+    text-align: left;
+    
+}
+.imag{
+    float: left
+}
+
+
+/*https://paulund.co.uk/how-to-create-shiny-css-buttons*/
+/***********************************************************************
+*  Green Background
+**********************************************************************/
+.green{
+    /*    display: flex;*/
+    background: #56B870; /* Old browsers */
+    background: -moz-linear-gradient(top, #56B870 0%, #a5c956 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#56B870), color-stop(100%,#a5c956)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #56B870 0%,#a5c956 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #56B870 0%,#a5c956 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #56B870 0%,#a5c956 100%); /* IE10+ */
+    background: linear-gradient(top, #56B870 0%,#a5c956 100%); /* W3C */
+    /*    height: 10vh;*/
+}
+
+/***********************************************************************
+*  Red Background
+**********************************************************************/
+.red{
+    background: #C655BE; /* Old browsers */
+    background: -moz-linear-gradient(top, #C655BE 0%, #cf0404 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#C655BE), color-stop(100%,#cf0404)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #C655BE 0%,#cf0404 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #C655BE 0%,#cf0404 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #C655BE 0%,#cf0404 100%); /* IE10+ */
+    background: linear-gradient(top, #C655BE 0%,#cf0404 100%); /* W3C */
+}
+
+/***********************************************************************
+*  Yellow Background
+**********************************************************************/
+.yellow{
+    background: #F3AAAA; /* Old browsers */
+    background: -moz-linear-gradient(top, #F3AAAA 0%, #febf04 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#F3AAAA), color-stop(100%,#febf04)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* IE10+ */
+    background: linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* W3C */
+}
+
+/***********************************************************************
+*  Blue Background
+**********************************************************************/
+.blue{
+    background: #7abcff; /* Old browsers */
+    background: -moz-linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7abcff), color-stop(44%,#60abf8), color-stop(100%,#4096ee)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* IE10+ */
+    background: linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* W3C */
+}
